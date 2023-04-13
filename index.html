@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .button { }
+    .red {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div>hello world</div>
+  <div>hello world</div>
+  <button class="button" onclick="changeColor()">кнопка</button>
+</body>
+<script>
+  console.log('Привет мир')
+  function changeColor(){
+    debugger
+    const divs = document.querySelectorAll('div')
+    divs.forEach(div => {
+        debugger
+        div.classList.add('red')
+    })
+  }
+</script>
+</html>
